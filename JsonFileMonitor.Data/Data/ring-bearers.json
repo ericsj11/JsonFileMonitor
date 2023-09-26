@@ -1,0 +1,44 @@
+{
+  "RingBearers": [
+    {
+      "Name": "Sauron",
+      "Order": 1,
+      "Description": "Original creator of the One Ring, which he used to dominate Middle-earth."
+    },
+    {
+      "Name": "Deagol",
+      "Order": 3,
+      "Description": "Found the One Ring at the bottom of a river and briefly became a ring bearer before being killed by Smeagol for the Ring."
+    },
+    {
+      "Name": "Smeagol/Gollum",
+      "Order": 4,
+      "Description": "Took the One Ring from Deagol and became its bearer for hundreds of years, leading to his transformation into a wretched creature."
+    },
+    {
+      "Name": "Bilbo Baggins",
+      "Order": 5,
+      "Description": "Found the One Ring in Gollum's cave during 'The Hobbit' and carried it for many years before passing it on to Frodo."
+    },
+    {
+      "Name": "Frodo Baggins",
+      "Order": 6,
+      "Description": "Chosen as the Ring bearer and tasked with the mission to destroy the One Ring in the fires of Mount Doom."
+    },
+    {
+      "Name": "Tom Bombadil",
+      "Order": 8,
+      "Description": "A mysterious and powerful figure in the Old Forest who briefly held the One Ring but was unaffected by its corrupting influence."
+    },
+    {
+      "Name": "Samwise Gamgee",
+      "Order": 7,
+      "Description": "Carried the Ring for a brief period when he believed Frodo to be dead, his loyalty and determination were crucial to the mission's success."
+    },
+    {
+      "Name": "Isildur",
+      "Order": 2,
+      "Description": "Cut the One Ring from Sauron's hand after defeating him in battle but was corrupted by its power."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+﻿<Window x:Class="JsonFileMonitor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Ring Bearers" Height="500" Width="900">
+    <Grid>
+        <ListView HorizontalAlignment="Center" Height="250" Margin="0,10,0,0" 
+              VerticalAlignment="Top" Width="850" ItemsSource="{Binding RingBearersModel.RingBearers}">
+            <ListView.View>
+                <GridView x:Name="RingBearersGridView">
+                    <GridViewColumn DisplayMemberBinding= "{Binding Path=Name}" Header="Name" Width="100"/>
+                    <GridViewColumn DisplayMemberBinding= "{Binding Path=Order}" Header="Order" Width="100"/>
+                    <GridViewColumn DisplayMemberBinding= "{Binding Path=Description}" Header="Description" Width="600"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Grid VerticalAlignment="Top" Height="60" Margin="0,275,0,0">
+            <Button Content="Force Read JSON" Name="readJsonButton" Margin="0,5,0,0" Width="200" Height="20" VerticalAlignment="Top" Command="{Binding GetRingBearersModelCommand}" />
+            <Grid VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="20">
+                <Button Content="Stop Monitor Service" Name="stopMonitorService" Width="200" Command="{Binding StopMonitorServiceCommand}" />
+                <Ellipse x:Name="StatusEllipse" Fill="{Binding MonitorStatus}" Height="20" HorizontalAlignment="Left" Stroke="Black" Width="20"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
